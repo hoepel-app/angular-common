@@ -7,13 +7,7 @@
     "@angular/material": "^8.0.1",
     "@angular/cdk": "^8.0.1",
     "@angular/animations": "^8.0.2",
-    "@hoepel.app/type": "^1.3.0-beta.3"
-  },
-  "devDependencies": {
-    "@angular/animations": "^8.0.2",
-    "@angular/cdk": "^8.0.1",
-    "@angular/flex-layout": "^8.0.0-beta.26",
-    "@angular/material": "^8.0.1",
-    "@hoepel.app/types": "^1.3.0-beta.3"
+    "@hoepel.app/type": "^1.3.0-beta.3",
+    "@angular/flex-layout": "^8.0.0-beta.26"
   }
 }
