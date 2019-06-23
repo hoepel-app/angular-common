@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/hoepel-app/angular-common/compare/v1.1.1...v1.1.2) (2019-06-23)
+
+
+### Bug Fixes
+
+* **publish:** move copy README before publishing step ([aa5074b](https://github.com/hoepel-app/angular-common/commit/aa5074b))
+
 ## [1.1.1](https://github.com/hoepel-app/angular-common/compare/v1.1.0...v1.1.1) (2019-06-23)
 
 
