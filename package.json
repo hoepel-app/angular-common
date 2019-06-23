@@ -105,7 +105,8 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
+    },
+    "access": "public"
   },
   "publishConfig": {
     "access": "public"
