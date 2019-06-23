@@ -1,0 +1,15 @@
+@for $i from 0 through 64 {
+  $prefixes: (
+    'm': 'margin',
+    'mt': 'margin-top',
+    'mr': 'margin-right',
+    'mb': 'margin-bottom',
+    'ml': 'margin-left',
+  );
+
+  @each $prefix, $property in $prefixes {
+    .#{$prefix}-#{$i * 4} {
+      #{$property}: #{$i * 4}px;
+    }
+  }
+}

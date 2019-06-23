@@ -5,7 +5,7 @@ import { Tenant } from '@hoepel.app/types';
 @Component({
   selector: 'hoepel-tenant-contact-dumb',
   templateUrl: './tenant-contact-dumb.component.html',
-  styleUrls: ['./tenant-contact-dumb.component.css']
+  styleUrls: ['./tenant-contact-dumb.component.scss']
 })
 export class TenantContactDumbComponent implements OnChanges {
   @Input() tenant: Tenant;
