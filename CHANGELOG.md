@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/hoepel-app/angular-common/compare/v1.0.5...v1.0.6) (2019-06-23)
+
+
+### Bug Fixes
+
+* **publish:** remove unneeded access keys ([c3f79fc](https://github.com/hoepel-app/angular-common/commit/c3f79fc))
+
 ## [1.0.5](https://github.com/hoepel-app/angular-common/compare/v1.0.4...v1.0.5) (2019-06-23)
 
 
