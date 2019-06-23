@@ -5,5 +5,19 @@
 
 [Demo](https://hoepel-app.github.io/angular-common/)
 
+## Usage
+
+```
+npm i @hoepel.app/angular-common
+```
+
+You will need to install `peerDepencies` yourself.
+
+Include the theme (in your global `styles.scss`):
+
+```
+@import '~@hoepel.app/angular-common/theme';
+@include hoepel-angular-common-theme($theme); // where $theme is your Angular Material theme
+```
 
 
