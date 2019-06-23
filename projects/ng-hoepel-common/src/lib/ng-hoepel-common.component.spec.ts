@@ -8,9 +8,8 @@ describe('NgHoepelCommonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgHoepelCommonComponent ]
-    })
-    .compileComponents();
+      declarations: [NgHoepelCommonComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
