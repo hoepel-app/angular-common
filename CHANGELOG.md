@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/hoepel-app/angular-common/compare/v1.0.3...v1.0.4) (2019-06-23)
+
+
+### Bug Fixes
+
+* **publish:** set default access to public ([fe8ef78](https://github.com/hoepel-app/angular-common/commit/fe8ef78))
+
 ## [1.0.3](https://github.com/hoepel-app/angular-common/compare/v1.0.2...v1.0.3) (2019-06-23)
 
 
