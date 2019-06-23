@@ -4,12 +4,17 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run build:lib && npm run build:demo",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "format:check": "prettier --list-different 'projects/**/*.ts'",
-    "format:write": "prettier --write 'projects/**/*.ts'"
+    "format:write": "prettier --write 'projects/**/*.ts'",
+    "test:lib-coverage": "ng test ng-hoepel-common --code-coverage --watch=false",
+    "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
+    "build:lib": "ng build ng-hoepel-common",
+    "build:demo": "ng build ng-hoepel-common-demo --base-href='https://hoepel-app.github.io/angular-common/'",
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-hoepel-common"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +39,7 @@
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "codecov": "^3.5.0",
     "codelyzer": "^5.0.0",
     "husky": "^2.4.1",
     "jasmine-core": "~3.4.0",
