@@ -60,7 +60,7 @@
               { "glob": "mdi.svg", "input": "../node_modules/@mdi/angular-material", "output": "./assets" }
             ],
             "styles": [
-              "projects/ng-hoepel-common-demo/src/styles.css"
+              "projects/ng-hoepel-common-demo/src/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -125,7 +125,7 @@
               "projects/ng-hoepel-common-demo/src/assets"
             ],
             "styles": [
-              "projects/ng-hoepel-common-demo/src/styles.css"
+              "projects/ng-hoepel-common-demo/src/styles.scss"
             ],
             "scripts": []
           }

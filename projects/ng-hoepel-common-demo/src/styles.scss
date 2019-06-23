@@ -1,7 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+// Global styles
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// Import library functions for theme creation.
+@import '~@angular/material/theming';
 
+// Include non-theme styles for core.
+@include mat-core();
+
+// Define your application's custom theme.
+$primary: mat-palette($mat-indigo);
+$accent:  mat-palette($mat-pink, A200, A100, A400);
+$theme: mat-light-theme($primary, $accent);
+
+// Include theme styles for Angular Material components.
+@include angular-material-theme($theme);
+
+@import "../../ng-hoepel-common/src/theme";
+@include hoepel-angular-common-theme($theme);
 
 /* See https://www.npmjs.com/package/@mdi/angular-material#angular */
 button.mat-menu-item {
