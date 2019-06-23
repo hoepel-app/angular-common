@@ -1,0 +1,16 @@
+@mixin hoepel-angular-common-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .secondary-text {
+    color: map-get($foreground, secondary-text);
+  }
+
+  .disabled-text {
+    color: map-get($foreground, disabled-text);
+  }
+
+  .muted-text {
+    color: map-get($foreground, disabled-text);
+  }
+}
