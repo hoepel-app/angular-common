@@ -1,0 +1,8 @@
+<hoepel-tenant-contact-dumb
+  [tenant]="tenant"
+  (updated)="tenantContactUpdated($event)"
+></hoepel-tenant-contact-dumb>
+
+<pre *ngIf="result">
+  {{ result | json }}
+</pre>
