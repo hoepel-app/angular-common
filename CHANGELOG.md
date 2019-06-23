@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/hoepel-app/angular-common/compare/v1.0.1...v1.0.2) (2019-06-23)
+
+
+### Bug Fixes
+
+* **publish:** publish package publically ([01c6fd8](https://github.com/hoepel-app/angular-common/commit/01c6fd8))
+
 ## [1.0.1](https://github.com/hoepel-app/angular-common/compare/v1.0.0...v1.0.1) (2019-06-23)
 
 
