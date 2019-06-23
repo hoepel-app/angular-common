@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/hoepel-app/angular-common/compare/v1.0.4...v1.0.5) (2019-06-23)
+
+
+### Bug Fixes
+
+* **publish:** try setting access to public in .npmrc ([b7cd9da](https://github.com/hoepel-app/angular-common/commit/b7cd9da))
+
 ## [1.0.4](https://github.com/hoepel-app/angular-common/compare/v1.0.3...v1.0.4) (2019-06-23)
 
 
