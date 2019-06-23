@@ -1,0 +1,103 @@
+<form fxLayout="column" fxLayoutAlign="start"
+      fxFlex="1 0 auto" name="form" [formGroup]="form">
+
+  <div class="h2 mb-24">Naam</div>
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+
+    <mat-form-field appearance="outline" fxFlex="100">
+      <mat-label>Naam organisatie</mat-label>
+      <input matInput formControlName="name">
+      <mat-icon matSuffix class="disabled-text">domain</mat-icon>
+      <mat-error>Gelieve een organisatienaam in te vullen (bv. "Speelplein Huppel VZW")</mat-error>
+    </mat-form-field>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+
+    <mat-form-field appearance="outline" fxFlex="100">
+      <mat-label>Algemeen emailadres (bv. info@mijnspeelplein.be)</mat-label>
+      <input matInput formControlName="email">
+      <mat-icon matSuffix class="disabled-text">alternate_email</mat-icon>
+      <mat-error>Gelieve een algemeen emailadres in te vullen</mat-error>
+    </mat-form-field>
+
+  </div>
+
+  <div class="h2 mb-24">Postadres</div>
+
+  <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+
+    <mat-form-field appearance="outline" fxFlex="100">
+      <mat-label>Straat en nummer</mat-label>
+      <input matInput formControlName="streetAndNumber" required>
+      <mat-error>Gelieve een straat en nummer in te vullen</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" fxFlex="50">
+      <mat-label>Postcode</mat-label>
+      <input matInput formControlName="zipCode">
+      <mat-icon matSuffix class="secondary-text">markunread_mailbox</mat-icon>
+      <mat-error>Gelieve een postcode in te vullen</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" fxFlex="50" class="pl-8">
+      <mat-label>Stad</mat-label>
+      <input matInput formControlName="city">
+      <mat-icon matSuffix class="secondary-text">location_city</mat-icon>
+      <mat-error>Gelieve een stad of gemeente in te vullen</mat-error>
+    </mat-form-field>
+
+  </div>
+
+  <div class="h2 mb-24">Contactpersoon</div>
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+
+    <mat-form-field appearance="outline" fxFlex="100" class="pr-4">
+      <mat-label>Naam contactpersoon</mat-label>
+      <input matInput formControlName="contactPersonName" required>
+      <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+      <mat-error>Gelieve de naam in te vullen van de contactpersoon</mat-error>
+    </mat-form-field>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+
+    <mat-form-field appearance="outline" fxFlex="100" class="pr-4">
+      <mat-label>Telefoonnummer contactpersoon</mat-label>
+      <input matInput formControlName="contactPersonPhone">
+      <mat-icon matSuffix class="secondary-text">phone</mat-icon>
+    </mat-form-field>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+
+    <mat-form-field appearance="outline" fxFlex="100" class="pr-4">
+      <mat-label>Emailadres contactpersoon</mat-label>
+      <input matInput formControlName="contactPersonEmail">
+      <mat-icon matSuffix class="secondary-text">alternate_email</mat-icon>
+    </mat-form-field>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+
+    <mat-form-field appearance="outline" fxFlex="100">
+      <mat-label>Omschrijving organisatie</mat-label>
+      <textarea cdkTextareaAutosize matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxFlex="1 0 auto" class="mb-8">
+    <button mat-raised-button color="accent" (click)="submit(form.getRawValue())" [disabled]="!form.valid || !tenant">
+      <mat-icon>save</mat-icon>
+      OPSLAAN
+    </button>
+  </div>
+
+</form>
