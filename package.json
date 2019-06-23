@@ -1,6 +1,6 @@
 {
   "name": "@hoepel.app/angular-common",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,10 +11,15 @@
     "format:check": "prettier --list-different 'projects/**/*.ts'",
     "format:write": "prettier --write 'projects/**/*.ts'",
     "test:lib-coverage": "ng test ng-hoepel-common --code-coverage --watch=false",
-    "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
+    "report-coverage:lib": "cat ./coverage/ng-hoepel-common/lcov.info | codecov",
     "build:lib": "ng build ng-hoepel-common",
     "build:demo": "ng build ng-hoepel-common-demo --base-href='https://hoepel-app.github.io/angular-common/'",
-    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-hoepel-common"
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-hoepel-common",
+    "publish:lib": "npx semantic-release",
+    "adjust-version": "npm-run-all adjust-version:*",
+    "adjust-version:lib": "rjp projects/ng-hoepel-common/package.json version $VERSION",
+    "adjust-version:main": "rjp package.json version $VERSION",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +41,10 @@
     "@angular/cli": "~8.0.3",
     "@angular/compiler-cli": "~8.0.1",
     "@angular/language-service": "~8.0.1",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/prompt": "^8.0.0",
+    "@semantic-release/exec": "^3.3.3",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -51,8 +60,11 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "lint-staged": "^8.2.1",
     "ng-packagr": "^5.1.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "protractor": "~5.4.0",
+    "replace-json-property": "^1.4.1",
+    "semantic-release": "^15.13.16",
     "ts-node": "~7.0.0",
     "tsickle": "^0.35.0",
     "tslint": "~5.15.0",
@@ -60,13 +72,23 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "lint-staged": {
     "projects/**/*.ts": [
       "prettier --write",
       "git add"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoepel-app/angular-common.git"
   }
 }
