@@ -1,3 +1,20 @@
+# [1.1.0](https://github.com/hoepel-app/angular-common/compare/v1.0.6...v1.1.0) (2019-06-23)
+
+
+### Bug Fixes
+
+* **test:** add global styles to stylePreprocessorOptions for tests ([89e4acf](https://github.com/hoepel-app/angular-common/commit/89e4acf))
+
+
+### Features
+
+* **demo:** use global theme and customize Material theme ([415573c](https://github.com/hoepel-app/angular-common/commit/415573c))
+* add global theme, implement all styles on contact person form ([a402540](https://github.com/hoepel-app/angular-common/commit/a402540))
+* **demo:** show contact person form in demo ([3ecf66f](https://github.com/hoepel-app/angular-common/commit/3ecf66f))
+* add common global styles ([4c36f12](https://github.com/hoepel-app/angular-common/commit/4c36f12))
+* **publish:** change name of root package to avoid confusion ([af9381c](https://github.com/hoepel-app/angular-common/commit/af9381c))
+* remove package lock from library ([f0df4d8](https://github.com/hoepel-app/angular-common/commit/f0df4d8))
+
 ## [1.0.6](https://github.com/hoepel-app/angular-common/compare/v1.0.5...v1.0.6) (2019-06-23)
 
 
