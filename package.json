@@ -1,5 +1,5 @@
 {
-  "name": "@hoepel.app/angular-common",
+  "name": "@hoepel.app/angular-common-root",
   "version": "1.0.5",
   "scripts": {
     "ng": "ng",
