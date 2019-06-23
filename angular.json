@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/ng-hoepel-common",
       "sourceRoot": "projects/ng-hoepel-common/src",
-      "prefix": "lib",
+      "prefix": "hoepel",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
