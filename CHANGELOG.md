@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/hoepel-app/angular-common/compare/v1.0.2...v1.0.3) (2019-06-23)
+
+
+### Bug Fixes
+
+* **publish:** explicitly set private to [secure] ([b4a201d](https://github.com/hoepel-app/angular-common/commit/b4a201d))
+
 ## [1.0.2](https://github.com/hoepel-app/angular-common/compare/v1.0.1...v1.0.2) (2019-06-23)
 
 
