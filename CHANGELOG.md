@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/hoepel-app/angular-common/compare/v1.1.0...v1.1.1) (2019-06-23)
+
+
+### Bug Fixes
+
+* **tenant-contact:** remove required attributes from HTML ([587300d](https://github.com/hoepel-app/angular-common/commit/587300d))
+
 # [1.1.0](https://github.com/hoepel-app/angular-common/compare/v1.0.6...v1.1.0) (2019-06-23)
 
 
