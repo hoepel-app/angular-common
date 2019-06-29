@@ -8,15 +8,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule, MatIconRegistry } from '@angular/material';
 import { DiscountEditExampleComponent } from './discount-edit-example/discount-edit-example.component';
 import { DiscountEditModule } from '../../../ng-hoepel-common/src/lib/discount-edit';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, TenantContactExampleComponent, DiscountEditExampleComponent],
-  imports: [BrowserModule, TenantContactModule, DiscountEditModule, BrowserAnimationsModule, MatCardModule],
+  imports: [
+    BrowserModule,
+    TenantContactModule,
+    DiscountEditModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
-    matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg'));
-  }
-}
+export class AppModule {}

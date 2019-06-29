@@ -15,6 +15,8 @@
     "copy:readme": "copyfiles ./README.md ./dist/ng-hoepel-common",
     "build:lib": "ng build ng-hoepel-common",
     "build:demo": "ng build ng-hoepel-common-demo --base-href='https://hoepel-app.github.io/angular-common/'",
+    "build:demo:local": "ng build ng-hoepel-common-demo",
+    "serve:demo": "ng serve ng-hoepel-common-demo",
     "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-hoepel-common",
     "publish:lib": "npm run copy:readme && npx semantic-release",
     "adjust-version": "npm-run-all adjust-version:*",

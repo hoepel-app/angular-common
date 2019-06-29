@@ -20,4 +20,11 @@ Include the theme (in your global `styles.scss`):
 @include hoepel-angular-common-theme($theme); // where $theme is your Angular Material theme
 ```
 
+## Development
+
+(see development brief)
+
+```
+npm run serve:demo
+```
 
