@@ -1,0 +1,73 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div formArrayName="discounts">
+    <div *ngFor="let discount of discountsArray.controls; let i=index" [formGroupName]="i"
+         fxLayout="row" fxLayoutAlign="start start"
+         fxLayout.lt-md="column" fxLayoutAlign.lt-md="start stretch">
+
+      <div fxHide.gt-sm fxFlex class="pb-12">
+        <span class="mat-subheading-2">Korting {{ i + 1 }}</span>
+
+        <button mat-icon-button class="pl-8" (click)="deleteDiscount(i)" type="button">
+          <mat-icon svgIcon="delete-outline"></mat-icon>
+        </button>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="start start"
+           fxLayout.lt-md="column" fxLayoutAlign.lt-md="start stretch" fxFlex.lt-md="auto"
+           fxFlex>
+
+        <mat-form-field appearance="outline" fxFlex="50" ngClass.gt-sm="pr-12">
+          <mat-label>Naam korting (bv. "kansentarief")</mat-label>
+          <input matInput formControlName="name">
+          <mat-icon matSuffix class="secondary-text" svgIcon="sale"></mat-icon>
+          <mat-error>Vul een naam in voor de korting</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" fxFlex="50" ngClass.gt-sm="pr-12">
+          <mat-label>Percentage korting</mat-label>
+          <input matInput formControlName="relativeDiscount" type="number">
+          <mat-icon matSuffix class="secondary-text" svgIcon="percent"></mat-icon>
+          <mat-error>Vul een geldig percentage in (0-100).</mat-error>
+        </mat-form-field>
+
+      </div>
+
+      <button mat-icon-button fxHide.lt-md fxFlex.gt-sm="20px" class="pt-16" (click)="deleteDiscount(i)" type="button">
+        <mat-icon svgIcon="delete-outline"></mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <p *ngIf="discountsArray.controls.length === 0 && form.pristine" class="mb-12">
+    Je hebt nog geen kortingen aangemaakt. <a (click)="addDiscount()" class="cursor-pointer">Klik hier</a> om een nieuwe korting aan te maken.
+  </p>
+
+  <p class="mb-12">
+    Kortingen laten je toe om korting toe te kennen bij het inschrijven. Zo kan je een korting aanmaken "kansentarief" met een korting van 40%.
+    Wanneer je een kind inschrijft voor een activiteit van €5.00 en deze korting aanduidt, moet er slechts €3.00 betaald worden.
+  </p>
+
+  <button mat-raised-button (click)="addDiscount()" *ngIf="discountsArray.controls.length > 0 || form.dirty" type="button">
+    <mat-icon svgIcon="plus"></mat-icon>
+    <span fxShow.gt-xs fxHide>NOG EEN KORTING TOEVOEGEN</span>
+    <span fxShow.xs fxHide>KORTING TOEVOEGEN</span>
+  </button>
+
+  <button mat-raised-button (click)="reset()" *ngIf="form.dirty" class="ml-12" type="button">
+    <mat-icon svgIcon="history"></mat-icon>
+    RESET
+  </button>
+
+  <button
+    mat-raised-button
+    [disabled]="!form.valid"
+    type="submit"
+    class="ml-12"
+    color="accent"
+    *ngIf="form.dirty">
+
+    <mat-icon svgIcon="content-save"></mat-icon>
+    OPSLAAN
+  </button>
+</form>
+
