@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hoepel-app/angular-common/compare/v1.1.2...v1.2.0) (2019-06-29)
+
+
+### Features
+
+* **discount-edit:** add discount edit component ([a3ae2b0](https://github.com/hoepel-app/angular-common/commit/a3ae2b0))
+
 ## [1.1.2](https://github.com/hoepel-app/angular-common/compare/v1.1.1...v1.1.2) (2019-06-23)
 
 
