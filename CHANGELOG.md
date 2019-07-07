@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/hoepel-app/angular-common/compare/v1.2.1...v1.2.2) (2019-07-07)
+
+
+### Bug Fixes
+
+* remove stray log statement ([aa07dc2](https://github.com/hoepel-app/angular-common/commit/aa07dc2))
+* remove unused import ([71c6bf4](https://github.com/hoepel-app/angular-common/commit/71c6bf4))
+
 ## [1.2.1](https://github.com/hoepel-app/angular-common/compare/v1.2.0...v1.2.1) (2019-06-29)
 
 
