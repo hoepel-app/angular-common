@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/hoepel-app/angular-common/compare/v1.2.0...v1.2.1) (2019-06-29)
+
+
+### Bug Fixes
+
+* **demo:** remove useless spec for demo component ([2db6e6c](https://github.com/hoepel-app/angular-common/commit/2db6e6c))
+* **development:** create npm run serve:demo, fix for icons ([7936390](https://github.com/hoepel-app/angular-common/commit/7936390))
+
 # [1.2.0](https://github.com/hoepel-app/angular-common/compare/v1.1.2...v1.2.0) (2019-06-29)
 
 
