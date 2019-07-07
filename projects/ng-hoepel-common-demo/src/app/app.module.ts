@@ -9,13 +9,21 @@ import { MatCardModule, MatIconRegistry } from '@angular/material';
 import { DiscountEditExampleComponent } from './discount-edit-example/discount-edit-example.component';
 import { DiscountEditModule } from '../../../ng-hoepel-common/src/lib/discount-edit';
 import { HttpClientModule } from '@angular/common/http';
+import { ConfirmDownloadDialogExampleComponent } from './confirm-download-dialog-example/confirm-download-dialog-example.component';
+import { ConfirmDownloadDialogModule } from '../../../ng-hoepel-common/src/lib/confirm-download-dialog';
 
 @NgModule({
-  declarations: [AppComponent, TenantContactExampleComponent, DiscountEditExampleComponent],
+  declarations: [
+    AppComponent,
+    TenantContactExampleComponent,
+    DiscountEditExampleComponent,
+    ConfirmDownloadDialogExampleComponent
+  ],
   imports: [
     BrowserModule,
     TenantContactModule,
     DiscountEditModule,
+    ConfirmDownloadDialogModule,
     BrowserAnimationsModule,
     MatCardModule,
     HttpClientModule

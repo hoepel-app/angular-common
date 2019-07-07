@@ -4,3 +4,4 @@
 
 export * from './lib/tenant-contact';
 export * from './lib/discount-edit';
+export * from './lib/confirm-download-dialog';

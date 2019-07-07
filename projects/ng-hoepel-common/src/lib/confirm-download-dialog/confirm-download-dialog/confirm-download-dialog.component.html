@@ -1,0 +1,6 @@
+<h1 matDialogTitle>Downloaden</h1>
+<div mat-dialog-content>Klik op downloaden om dit bestand op te slaan.</div>
+<div mat-dialog-actions class="pt-24">
+    <a mat-raised-button class="mat-accent mr-16" download [href]="data.downloadUrl"><mat-icon class="mr-4">cloud_download</mat-icon> Downloaden</a>
+    <button mat-button (click)="dialogRef.close(false)">Annuleren</button>
+</div>
