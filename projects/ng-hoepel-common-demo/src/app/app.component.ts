@@ -11,7 +11,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer, http: HttpClient) {
-    console.log(http);
     matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg'));
   }
 }
